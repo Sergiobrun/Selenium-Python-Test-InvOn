@@ -9,10 +9,10 @@ class Home():
         self.driver = myDriver
         self.register = (By.XPATH, "//a[contains(.,'Registrarse')]")
         self.messages = (By.XPATH, '//li/a[@href="/User/MisMensajes"]')
-        self.login_button = (By.XPATH, "//a[contains(.,'Ingresar')]")
-        self.user = (By.ID,'username')
+        self.login_button = (By.CLASS_NAME, "ingresar")
+        self.user = (By.ID,'usuario')
         self.password = (By.ID, 'password')
-        self.login_2nd_button = (By.ID, 'sendlogin')
+        self.login_2nd_button = (By.XPATH, '//input[@value = "Ingresar"]')
 
     def click_register_link(self):
         self.driver.find_element(*self.register).click()

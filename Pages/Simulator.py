@@ -3,13 +3,15 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 import unittest
+import time
 
 class Simulator():
     def __init__(self, myDriver):
         self.driver = myDriver
-
+        time.sleep(3)
         self.buy = (By.XPATH, '//div/a[@href="/Simulador/Comprar"]')
-        self.symbol = (By.ID, 'search_symbol')
+        time.sleep(5)
+        self.symbol = (By.ID, 'IdSimbolo')
         self.quantity = (By.ID, 'Cantidad')
         self.quantity_field = (By.ID, 'ValorCantidad')
         self.limit_price = (By.ID, 'PrecioLimite')
