@@ -1,5 +1,5 @@
 # Selenium-Python-Test-InvOn
-This is a project I created in a Selenium Web Driver course to implement Page Object framework automation using Selenium webdriver with Python. 
+This is a project I created in a Selenium Web Driver course to implement Page Object desing pattern with Python. 
 The website used is InvertirOnline, a stock trade company in Argetina.
 In the project the test cases are:
 - create an account
