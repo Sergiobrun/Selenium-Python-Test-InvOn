@@ -17,7 +17,7 @@ class TestInvOnlie(unittest.TestCase):
         if sys.platform == 'win32':
             self.driver = webdriver.Chrome('chromedriver.exe', options = options)
         elif sys.platform == 'linux':
-            self.driver = webdriver.Chrome('chromedriver.exe', options=options)
+            self.driver = webdriver.Chrome('chromedriver', options=options)
         self.driver.get('https://www.invertironline.com/')
         self.home = Home(self.driver)
         self.mailinator = mailinator(self.driver)
