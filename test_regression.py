@@ -13,11 +13,11 @@ class TestInvOnlie(unittest.TestCase):
 
     def setUp(self):
         options = Options()
-        options.headless = False
+        options.headless = True
         if sys.platform == 'win32':
-            self.driver = webdriver.Chrome('chromedriver.exe', options = options)
+            self.driver = webdriver.Chrome('chromedriver.exe')
         elif sys.platform == 'linux':
-            self.driver = webdriver.Chrome('chromedriver', options=options)
+            self.driver = webdriver.Chrome('chromedriver')
         self.driver.get('https://www.invertironline.com/')
         self.home = Home(self.driver)
         self.mailinator = mailinator(self.driver)
@@ -38,6 +38,7 @@ class TestInvOnlie(unittest.TestCase):
         self.driver.get('https://micuenta.invertironline.com/ingresar?url=https://www.invertironline.com/&intencion=0')
         self.login.login(self.email, self.password)
         self.home.check_login()
+
     '''
     def test_buy_sim_stocks(self):
         self.home.login(self.email, self.password)
