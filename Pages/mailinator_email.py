@@ -21,5 +21,5 @@ class mailinator_email():
         time.sleep(3)
         #self.driver.find_element(*self.validation_btn).click()
         print('que ondaaa')
-        time.sleep(3)
+        time.sleep(4)
 
