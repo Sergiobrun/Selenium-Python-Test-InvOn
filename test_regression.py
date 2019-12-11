@@ -13,7 +13,7 @@ class TestInvOnlie(unittest.TestCase):
 
     def setUp(self):
         options = Options()
-        options.headless = True
+        options.headless = False
         if sys.platform == 'win32':
             self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
         elif sys.platform == 'linux':
