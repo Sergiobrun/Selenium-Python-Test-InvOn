@@ -12,7 +12,6 @@ class mailinator_email():
     def validation(self):
         print('buscando')
         self.driver.find_element(*self.verificacion).click()
-        print('encontrado')
         asd = self.driver.find_element_by_tag_name("iframe")
         self.driver.switch_to.frame(asd)
 
