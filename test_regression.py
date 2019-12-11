@@ -13,8 +13,7 @@ class TestInvOnlie(unittest.TestCase):
 
     def setUp(self):
         options = Options()
-        options.add_argument('--headless')
-        options.add_argument('--disable-gpu')
+        options.headless = True
         if sys.platform == 'win32':
             self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
         elif sys.platform == 'linux':
