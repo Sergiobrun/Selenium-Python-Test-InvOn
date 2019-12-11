@@ -30,7 +30,7 @@ class TestInvOnlie(unittest.TestCase):
         self.user = str(datetime.now().strftime('User'+'%Y%m%d'))
         self.password = str(datetime.now().strftime('Pass'+'%Y%m%d'))
 
-    '''
+
     def test_new_account(self):
         self.home.click_register_link()
         self.register.fill_fields('Sergio','Bruno',self.email, self.password,'261', '1234567')
@@ -47,7 +47,7 @@ class TestInvOnlie(unittest.TestCase):
         self.simulator.buy_stock('YPFD','2','620')
         self.simulator.confirm_buy(self.password)
         self.simulator.check_purchase()
-
+    '''
 #asd
     def tearDown(self):
         self.driver.close()
