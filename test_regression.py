@@ -28,7 +28,7 @@ class TestInvOnlie(unittest.TestCase):
         self.user = str(datetime.now().strftime('User'+'%Y%m%d'))
         self.password = str(datetime.now().strftime('Pass'+'%Y%m%d'))
 
-    '''
+
     def test_new_account(self):
         self.home.click_register_link()
         self.register.fill_fields('Sergio','Bruno',self.email, self.password,'261', '1234567')
@@ -39,7 +39,7 @@ class TestInvOnlie(unittest.TestCase):
         self.login.login(self.email, self.password)
         
 
-    '''
+
     def test_buy_sim_stocks(self):
         self.home.login(self.email, self.password)
         self.home.check_login()
