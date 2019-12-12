@@ -12,10 +12,9 @@ import sys
 class TestInvOnlie(unittest.TestCase):
 
     def setUp(self):
-        options = Options()
-        options.headless = False
+
         if sys.platform == 'win32':
-            self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+            self.driver = webdriver.Chrome('chromedriver.exe')
         elif sys.platform == 'linux':
             self.driver = webdriver.Chrome('chromedriver')
         self.driver.get('https://www.invertironline.com/')
@@ -47,7 +46,7 @@ class TestInvOnlie(unittest.TestCase):
         #self.simulator.buy_stock('YPFD','2','620')
         #self.simulator.confirm_buy(self.password)
         #self.simulator.check_purchase()
-    
+
 #asd
     def tearDown(self):
         self.driver.close()
