@@ -29,7 +29,7 @@ class TestInvOnlie(unittest.TestCase):
         self.user = str(datetime.now().strftime('User'+'%Y%m%d'))
         self.password = str(datetime.now().strftime('Pass'+'%Y%m%d'))
 
-
+    '''
     def test_new_account(self):
         self.home.click_register_link()
         self.register.fill_fields('Sergio','Bruno',self.email, self.password,'261', '1234567')
@@ -38,15 +38,16 @@ class TestInvOnlie(unittest.TestCase):
         self.mailinator_email.validation()
         self.driver.get('https://micuenta.invertironline.com/ingresar?url=https://www.invertironline.com/&intencion=0')
         self.login.login(self.email, self.password)
-        self.home.check_login()
+        
 
     '''
     def test_buy_sim_stocks(self):
         self.home.login(self.email, self.password)
-        self.simulator.buy_stock('YPFD','2','620')
-        self.simulator.confirm_buy(self.password)
-        self.simulator.check_purchase()
-    '''
+        self.home.check_login()
+        #self.simulator.buy_stock('YPFD','2','620')
+        #self.simulator.confirm_buy(self.password)
+        #self.simulator.check_purchase()
+    
 #asd
     def tearDown(self):
         self.driver.close()
