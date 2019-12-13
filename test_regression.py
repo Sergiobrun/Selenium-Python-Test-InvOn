@@ -8,6 +8,7 @@ from datetime import datetime
 from selenium.webdriver.chrome.options import Options
 import HtmlTestRunner
 import sys
+import xmlrunner
 
 class TestInvOnlie(unittest.TestCase):
 
@@ -53,5 +54,6 @@ class TestInvOnlie(unittest.TestCase):
         self.driver.quit()
 
 if __name__ == '__main__':
-    unittest.main(testRunner= HtmlTestRunner.HTMLTestRunner(output='myreport'))
+    unittest.main(testRunner= xmlrunner.XMLTestRunner(output='myreport'),
+                  failfast=False, catchbreak=False)
     unittest.main()
