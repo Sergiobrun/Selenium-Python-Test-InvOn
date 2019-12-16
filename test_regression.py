@@ -38,7 +38,9 @@ class TestInvOnlie(unittest.TestCase):
         self.mailinator_email.validation()
         self.driver.get('https://micuenta.invertironline.com/ingresar?url=https://www.invertironline.com/&intencion=0')
         self.login.login(self.email, self.password)
-        
+        self.home.check_login()
+
+
     '''
 
     def test_buy_sim_stocks(self):
