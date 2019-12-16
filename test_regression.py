@@ -39,7 +39,7 @@ class TestInvOnlie(unittest.TestCase):
         self.driver.get('https://micuenta.invertironline.com/ingresar?url=https://www.invertironline.com/&intencion=0')
         self.login.login(self.email, self.password)
         
-
+    '''
 
     def test_buy_sim_stocks(self):
         self.home.login(self.email, self.password)
@@ -47,7 +47,7 @@ class TestInvOnlie(unittest.TestCase):
         #self.simulator.buy_stock('YPFD','2','620')
         #self.simulator.confirm_buy(self.password)
         #self.simulator.check_purchase()
-
+    '''
 #asd
     def tearDown(self):
         self.driver.close()
