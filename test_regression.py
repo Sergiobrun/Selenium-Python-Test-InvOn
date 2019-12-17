@@ -56,6 +56,5 @@ class TestInvOnlie(unittest.TestCase):
         self.driver.quit()
 
 if __name__ == '__main__':
-    unittest.main(testRunner= xmlrunner.XMLTestRunner(output='myreport'),
-                  failfast=False, catchbreak=False)
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='myreport'))
     unittest.main()
