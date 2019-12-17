@@ -50,7 +50,6 @@ class TestInvOnlie(unittest.TestCase):
         self.simulator.confirm_buy(self.password)
         self.simulator.check_purchase()
 
-#asd
     def tearDown(self):
         self.driver.close()
         self.driver.quit()

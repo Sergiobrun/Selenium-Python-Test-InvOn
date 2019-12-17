@@ -10,16 +10,11 @@ class mailinator_email():
         self.validation_btn = (By.CSS_SELECTOR, ".button-td > .button-a")
 
     def validation(self):
-        print('buscando')
         self.driver.find_element(*self.verificacion).click()
-        asd = self.driver.find_element_by_tag_name("iframe")
-        self.driver.switch_to.frame(asd)
-
+        frame = self.driver.find_element_by_tag_name("iframe")
+        self.driver.switch_to.frame(frame)
         element = self.driver.find_element(*self.validation_btn)
         actions = ActionChains(self.driver)
         actions.move_to_element(element).click()
-        time.sleep(3)
-        #self.driver.find_element(*self.validation_btn).click()
-        print('que ondaaa')
         time.sleep(4)
 
