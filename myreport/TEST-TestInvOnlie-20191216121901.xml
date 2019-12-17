@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" file=".py" name="TestInvOnlie-20191216121901" skipped="0" tests="1" time="46.588" timestamp="2019-12-16T12:19:48">
+	<testcase classname="TestInvOnlie" file="test_regression.py" line="33" name="test_new_account" time="46.588" timestamp="2019-12-16T12:19:48">
+		<system-out>
+<![CDATA[buscando
+que ondaaa
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>
